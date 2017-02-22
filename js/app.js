@@ -52,7 +52,7 @@ For the T-Shirt color menu, only display the color options that match the design
 If the user selects "Theme - JS Puns" then the color menu should only display "Cornflower Blue," "Dark Slate Grey," and "Gold."
 If the user selects "Theme - I ♥ JS" then the color menu should only display "Tomato," "Steel Blue," and "Dim Grey."*/
 $('#color').find('option').remove().end()
-        .append('<option value="tomato">Please select a T-shirt theme</option>');
+        .append('<option>Please select a T-shirt theme</option>');
   
 var $option1=$('<option value="cornflowerblue">Cornflower Blue (JS Puns shirt only)</option>')
 $("#design").on("change" ,function(){
@@ -76,7 +76,7 @@ $('#color').removeClass('is-hidden');
     }
 else if(designSelection === "selecttheme") {
        $('#color').find('option').remove().end()
-        .append('<option value="tomato">Please select a T-shirt theme</option>');
+        .append('<option>Please select a T-shirt theme</option>');
     }
   });
 
